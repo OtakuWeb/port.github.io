@@ -1,0 +1,41 @@
+#floating-nav{
+    background: var(--color-bg1);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    box-shadow: 3px 5px 10px var(--color-bg);
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    display: none;
+}
+
+#floating-nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+#floating a:hover{
+    background: var(--color-bg);
+}
+
+#floating-nav a.active{
+    background: var(--color-bg);
+}
+
+
+@media screen and (max-width: 1024px) {
+    #floating-nav{
+        display: flex;
+    }
+}
